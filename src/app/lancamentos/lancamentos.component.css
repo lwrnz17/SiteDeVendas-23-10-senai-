@@ -1,0 +1,10 @@
+ :host { display: block; flex: 1; background: #e8f6ff; }
+.pagina-lancamentos { min-height: 65vh; padding-top: 65px; padding-bottom: 70px; }
+.cabecalho-lancamentos { text-align: center; margin-bottom: 35px; }
+.cabecalho-lancamentos h1 { margin: 0; color: #15334a; font-size: clamp(30px, 5vw, 42px); font-weight: 900; }
+.cabecalho-lancamentos h1 span { color: #168bd0; }
+.cabecalho-lancamentos p { margin-top: 10px; color: #58758a; }
+.painel-lancamentos { max-width: 720px; margin: 0 auto; padding: 48px 28px; border: 1px solid #c2e4f7; border-radius: 22px; background: #fff; text-align: center; box-shadow: 0 12px 32px rgba(17,102,153,.09); }
+.icone-controle { display: grid; place-items: center; width: 68px; height: 68px; margin: 0 auto 18px; border-radius: 20px; background: #d8f0ff; color: #087ec4; font-size: 35px; }
+.painel-lancamentos h2 { color: #15334a; font-size: 26px; font-weight: 900; }
+.painel-lancamentos p { max-width: 490px; margin: 0 auto 23px; color: #58758a; line-height: 1.7; }

@@ -1,0 +1,20 @@
+ .menu-gamer {
+  position: sticky; top: 0; z-index: 1000;
+  min-height: 82px; height: auto; padding: 12px clamp(16px, 4vw, 60px);
+  display: flex; flex-wrap: wrap; gap: 16px;
+  background: rgba(200, 234, 255, 0.97) !important;
+  color: #15334a; border-bottom: 1px solid #9bd8f7;
+  box-shadow: 0 5px 20px rgba(7, 89, 133, 0.09);
+}
+.logo { display: inline-flex; align-items: center; gap: 10px; color: #15334a; text-decoration: none; font-size: 17px; font-weight: 900; letter-spacing: .4px; white-space: nowrap; }
+.logo img { width: 48px; height: 48px; object-fit: contain; border-radius: 50%; }
+.logo strong { color: #087ec4; }
+.menu-links { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+.menu-links a { padding: 10px 12px; border-radius: 10px; color: #23465e; text-decoration: none; font-size: 14px; font-weight: 800; transition: background .2s ease, color .2s ease, transform .2s ease; }
+.menu-links a:hover, .menu-links a.ativo { color: #fff; background: #168bd0; transform: translateY(-1px); }
+.menu-links a span { font-size: 11px; }
+.menu-spacer { flex: 1 1 8px; }
+.login-btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 19px; border-radius: 11px; color: #fff; background: #087ec4; text-decoration: none; font-weight: 900; box-shadow: 0 5px 12px rgba(8,126,196,.2); transition: transform .2s ease, box-shadow .2s ease, background .2s ease; white-space: nowrap; }
+.login-btn:hover, .login-btn.ativo-login { color: #fff; background: #075985; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(8,126,196,.28); }
+@media (max-width: 900px) { .menu-gamer { justify-content: center; } .menu-spacer { display: none; } .menu-links { justify-content: center; } }
+@media (max-width: 560px) { .menu-gamer { gap: 9px; padding: 12px; } .logo { width: 100%; justify-content: center; } .menu-links { gap: 2px; } .menu-links a { padding: 8px; font-size: 12px; } }

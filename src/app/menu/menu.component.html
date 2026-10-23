@@ -1,0 +1,16 @@
+<mat-toolbar class="menu-gamer">
+  <a routerLink="/inicio" class="logo" aria-label="Lorenzo Games - início">
+    <img src="assets/img/logo.png" alt="Logo Lorenzo Games">
+    <span>LORENZO <strong>GAMES</strong></span>
+  </a>
+
+  <nav class="menu-links" aria-label="Menu principal">
+    <a routerLink="/inicio" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+    <a routerLink="/inicio" fragment="produtos">Produtos</a>
+    <a href="https://www.infoescola.com/curiosidades/historia-do-videogame/" target="_blank" rel="noopener noreferrer">História dos Games <span aria-hidden="true">↗</span></a>
+    <a routerLink="/lancamentos" routerLinkActive="ativo">Lançamentos</a>
+  </nav>
+
+  <span class="menu-spacer"></span>
+  <a routerLink="/login" routerLinkActive="ativo-login" class="login-btn"><span aria-hidden="true">♙</span> Entrar</a>
+</mat-toolbar>

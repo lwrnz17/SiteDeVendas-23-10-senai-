@@ -1,0 +1,19 @@
+ :host { display: block; flex: 1; }
+.pagina-login { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 42px 18px; background: radial-gradient(circle at top left, #d1edff, transparent 42%), #e8f6ff; }
+.cartao-login { width: min(100%, 460px); padding: clamp(25px, 5vw, 42px); border: 1px solid #c2e4f7; border-radius: 24px; background: #fff; box-shadow: 0 20px 55px rgba(17,102,153,.13); }
+.login-marca { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 28px; color: #15334a; font-weight: 900; letter-spacing: .5px; }
+.login-marca img { width: 46px; height: 46px; object-fit: contain; }
+.login-marca strong { color: #087ec4; }
+.cartao-login .sobretitulo { margin-bottom: 6px; }
+.cartao-login h1 { margin: 0; color: #15334a; font-size: clamp(27px, 5vw, 34px); font-weight: 900; }
+.subtitulo { margin: 8px 0 25px; color: #678094; }
+.cartao-login form { display: flex; flex-direction: column; gap: 9px; }
+.cartao-login label { margin-top: 8px; color: #23465e; font-size: 14px; font-weight: 800; }
+.cartao-login input { width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #c8dfea; border-radius: 10px; outline: none; background: #f8fcff; color: #15334a; transition: border-color .2s, box-shadow .2s; }
+.cartao-login input:focus { border-color: #168bd0; box-shadow: 0 0 0 3px rgba(22,139,208,.14); }
+.cartao-login form button { display: flex; align-items: center; justify-content: space-between; margin-top: 15px; padding: 14px 17px; border: 0; border-radius: 10px; background: #087ec4; color: #fff; font-weight: 900; cursor: pointer; transition: background .2s, transform .2s; }
+.cartao-login form button:hover { background: #075985; transform: translateY(-1px); }
+.mensagem-login { margin: 8px 0 0; padding: 10px; border-radius: 9px; background: #e6f6ff; color: #075985; font-size: 13px; }
+.nota-login { margin: 20px 0 14px; color: #7890a0; font-size: 12px; line-height: 1.5; }
+.voltar { color: #087ec4; font-size: 14px; font-weight: 800; text-decoration: none; }
+.voltar:hover { text-decoration: underline; }

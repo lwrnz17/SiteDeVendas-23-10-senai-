@@ -1,0 +1,53 @@
+<main class="pagina-inicio">
+  <section class="hero" aria-label="Destaques da loja">
+    <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Destaque 1"></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Destaque 2"></button>
+        <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Destaque 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="assets/img/banner1.PNG" class="d-block w-100" alt="Destaque de jogos da Lorenzo Games"></div>
+        <div class="carousel-item"><img src="assets/img/banner2.PNG" class="d-block w-100" alt="Ofertas especiais de games"></div>
+        <div class="carousel-item"><img src="assets/img/banner3.PNG" class="d-block w-100" alt="Novidades do universo gamer"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+    </div>
+  </section>
+
+  <section id="produtos" class="secao-produtos container">
+    <div class="titulo-secao">
+      <span class="sobretitulo">ESCOLHA SUA PRÓXIMA AVENTURA</span>
+      <h1>Jogos em <span>promoção</span></h1>
+      <p>Grandes aventuras, preços especiais e diversão sem limites.</p>
+    </div>
+
+    <div class="row g-4 lista-jogos">
+      <div class="col-12 col-md-6 col-lg-4">
+        <mat-card class="card-jogo">
+          <div class="imagem-jogo"><img mat-card-image src="assets/img/jogo1.PNG" alt="Capa do Jogo 1"><span class="selo">OFERTA</span></div>
+          <mat-card-content><span class="categoria">AÇÃO & AVENTURA</span><h2>Cyber Nexus</h2><p>Prepare-se para explorar um futuro tecnológico, enfrentar desafios eletrizantes e descobrir os segredos de um mundo cheio de perigos.</p><div class="linha-preco"><span class="preco">R$250,00</span><button mat-raised-button color="primary" type="button" (click)="avisarCompra('Cyber Nexus')">Comprar</button></div></mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <mat-card class="card-jogo">
+          <div class="imagem-jogo"><img mat-card-image src="assets/img/jogo2.PNG" alt="Capa do Jogo 2"><span class="selo">DESTAQUE</span></div>
+          <mat-card-content><span class="categoria">ESTRATÉGIA</span><h2>Lendas de Aetheria</h2><p>Embarque em uma jornada mágica por terras misteriosas, descubra lendas antigas e torne-se o herói de uma aventura épica.</p><div class="linha-preco"><span class="preco">R$89,99</span><button mat-raised-button color="primary" type="button" (click)="avisarCompra('Lendas de Aetheria')">Comprar</button></div></mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <mat-card class="card-jogo">
+          <div class="imagem-jogo"><img mat-card-image src="assets/img/jogo3.PNG" alt="Capa do Jogo 3"><span class="selo">POPULAR</span></div>
+          <mat-card-content><span class="categoria">AVENTURA</span><h2>Turbo Velocity X</h2><p>Pise fundo e desafie seus limites em corridas alucinantes, com pistas radicais, velocidade extrema e muita adrenalina.</p><div class="linha-preco"><span class="preco">R$149,99</span><button mat-raised-button color="primary" type="button" (click)="avisarCompra('Turbo Velocity X')">Comprar</button></div></mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <p class="aviso-compra" *ngIf="mensagemCompra" role="status">{{ mensagemCompra }}</p>
+  </section>
+
+  <section class="faixa-comunidade container">
+    <div><span class="sobretitulo">A COMUNIDADE É SUA</span><h2>O próximo nível começa aqui.</h2><p>Explore a loja e fique de olho nas novidades do mundo gamer.</p></div>
+    <a routerLink="/lancamentos" class="botao-link">Ver lançamentos <span aria-hidden="true">→</span></a>
+  </section>
+</main>
