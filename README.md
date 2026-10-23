@@ -1,16 +1,17 @@
-# Lorenzo Games
+# Projeto e-commerce
 
-Projeto acadêmico de loja de games desenvolvido com Angular 15, Angular Material e Bootstrap.
+Projeto de e-commerce de jogos desenvolvido com Angular para uma atividade do SENAI.
 
-## Executar localmente
+## Tecnologias utilizadas
 
-1. Instale uma versão do Node.js compatível com o Angular 15 (Node 18 LTS é uma opção recomendada).
-2. Abra o terminal nesta pasta, onde está o `package.json`.
-3. Execute `npm install`.
-4. Execute `npm start` e abra o endereço local indicado pelo Angular CLI.
+- Angular
+- TypeScript
+- HTML e CSS
+- Bootstrap e Angular Material
 
-## Observações
+## Como executar o projeto
 
-- O menu tem rotas para Início, Login e Lançamentos. O link História dos Games abre uma página externa da InfoEscola.
-- A tela de login e os botões de compra são demonstrativos. Eles ainda não se conectam a um servidor, banco de dados, pagamento ou autenticação real.
-- As imagens fornecidas no projeto SENAI foram mantidas em `src/assets/img`.
+1. Instale o Node.js.
+2. Execute `npm install`.
+3. Execute `npx ng serve`.
+4. Acesse `http://localhost:4200` no navegador.
